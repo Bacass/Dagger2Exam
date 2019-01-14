@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    @Component(modules = arrayOf(NumberMaker::class, CharMaker::class))
-    interface MagicBox {
-        fun inject(app: MainActivity)
-        fun inject(app: Main2Activity)
-    }
+//    @Component(modules = arrayOf(NumberMaker::class, CharMaker::class))
+//    interface MagicBox {
+//        fun inject(app: MainActivity)
+//        fun inject(app: Main2Activity)
+//    }
 
     @Module
     class CharMaker @Inject constructor() {
